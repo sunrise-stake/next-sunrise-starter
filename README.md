@@ -1,5 +1,5 @@
-<a href="https://next-solana-starter.vercel.app">
-  <img alt="Next Sunrise Stake Starter" src="https://user-images.githubusercontent.com/76690419/215271811-8f916458-5a14-4a89-883a-64080e890c2d.svg">
+<a href="https://next-sunrise-starter.vercel.app">
+  <img alt="Next Sunrise Stake Starter" src="https://raw.githubusercontent.com/sunrise-stake/next-sunrise-starter/main/public/assets/og.png">
 </a>
 
    
