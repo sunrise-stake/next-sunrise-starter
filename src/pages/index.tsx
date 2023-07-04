@@ -1,7 +1,7 @@
 import MainLayout from '@/Layout/Main.layout';
 import {
   Box,
-  Button, Card,
+  Button,
   Heading,
   Icon,
   Image,
@@ -32,10 +32,7 @@ const Home = () => {
       <VStack h="100vh" spacing={4}>
         <Heading alignItems="center" as="p" display="flex" size={['xl', '4xl']}>
           Create a{' '}
-          <Link
-            href="https://sunrisestake.com"
-            isExternal
-          >
+          <Link href="https://sunrisestake.com" isExternal>
             <Image
               alt="GSOL icon"
               height={[16, 64]}
@@ -47,12 +44,7 @@ const Home = () => {
           Project
         </Heading>
         {connected ? (
-          <Box
-            boxShadow="base"
-            p={4}
-            rounded="md"
-            w={['full', '50%']}
-          >
+          <Box boxShadow="base" p={4} rounded="md" w={['full', '50%']}>
             <SunriseDetails />
             <SunriseDeposit />
             <WhatNextBox />

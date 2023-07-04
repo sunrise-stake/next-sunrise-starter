@@ -1,12 +1,6 @@
 import { FC, useEffect, useState } from 'react';
 import { useSunrise } from '@/context/SunriseClientContext';
-import {
-  Card,
-  CardBody,
-  Stack,
-  Button,
-  Input,
-} from '@chakra-ui/react';
+import { Card, CardBody, Stack, Button, Input } from '@chakra-ui/react';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import BN from 'bn.js';

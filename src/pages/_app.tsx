@@ -29,7 +29,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           siteName: metadata.title,
           images: [
             {
-              url: '/assets/og.svg',
+              url: '/assets/og.png',
               width: 1200,
               height: 630,
               alt: metadata.title,
