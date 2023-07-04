@@ -1,15 +1,17 @@
-import { WalletWrapper } from '@/Wrappers/WalletWrapper';
+import { network, WalletWrapper } from '@/Wrappers/WalletWrapper';
 import { ChakraProvider } from '@chakra-ui/react';
 import '@solana/wallet-adapter-react-ui/styles.css';
+import '@/styles/override.css';
 import type { AppProps } from 'next/app';
 import '@fontsource/inter/variable.css';
 import { theme } from '@/styles/theme';
 import { NextSeo } from 'next-seo';
+import { SunriseClientProvider } from '@/context/SunriseClientContext';
 
 const metadata = {
-  title: 'Next Solana Starter',
+  title: 'Sunrise Starter',
   description:
-    'An opinionated Next.js template for building Solana applications pre configured with Chakra UI, Next.js, Solana wallet adapter, ESlint, Prettier, and more.',
+    'An opinionated Next.js template for building Solana applications pre configured with Sunrise Stake, Chakra UI, Next.js, Solana wallet adapter, ESlint, Prettier, and more.',
   url: 'https://next-solana-starter.vercel.app/',
 };
 
@@ -39,7 +41,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       />
 
       <WalletWrapper>
-        <Component {...pageProps} />
+        <SunriseClientProvider network={network}>
+          <Component {...pageProps} />
+        </SunriseClientProvider>
       </WalletWrapper>
     </ChakraProvider>
   );

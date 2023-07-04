@@ -17,7 +17,6 @@ const Nav: FC = () => {
   return (
     <Flex
       align="center"
-      color="white"
       justify="space-between"
       position="fixed"
       px={6}
@@ -25,7 +24,7 @@ const Nav: FC = () => {
       top={0}
       w="100%"
     >
-      <Text>Next solana Template</Text>
+      <Text>Next Sunrise Template</Text>
       {connected ? <WalletMenu /> : <WalletMultiButton />}
     </Flex>
   );

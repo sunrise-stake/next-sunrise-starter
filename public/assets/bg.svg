@@ -1,6 +1,6 @@
 <svg width="1512" height="982" viewBox="0 0 1512 982" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_13_46)">
-        <rect width="1512" height="982" fill="#040108" />
+        <rect width="1512" height="982" fill="#f4f1f8" />
         <g opacity="0.7" filter="url(#filter0_f_13_46)">
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M738.677 158.454C831.222 154.655 923.102 187.172 988.95 252.311C1055.13 317.777 1084.79 409.515 1086.55 502.585C1088.35 597.654 1069.34 698.967 998.596 762.505C930.234 823.908 829.328 830.081 738.677 815.049C661.789 802.299 607.757 743.725 552.698 688.564C497.717 633.482 435.067 579.969 426.789 502.585C417.779 418.352 451.253 334.82 508.142 272.051C567.947 206.062 649.694 162.107 738.677 158.454Z"
@@ -38,9 +38,9 @@
             <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_13_46" />
         </filter>
         <linearGradient id="paint0_linear_13_46" x1="439" y1="225" x2="1073" y2="757" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#3A1071" />
-            <stop offset="0.46877" stop-color="#6316C7" stop-opacity="0.976561" />
-            <stop offset="1" stop-color="#491888" stop-opacity="0.95" />
+            <stop stop-color="#3Aa071" />
+            <stop offset="0.46877" stop-color="#63a627" stop-opacity="0.976561" />
+            <stop offset="1" stop-color="#49a828" stop-opacity="0.95" />
         </linearGradient>
         <clipPath id="clip0_13_46">
             <rect width="1512" height="982" fill="white" />

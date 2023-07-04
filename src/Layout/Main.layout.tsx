@@ -13,12 +13,11 @@ const MainLayout: FC<IMainLayoutProps> = ({ children }) => {
       bgColor="gray.900"
       bgImage="url(/assets/bg.svg)"
       bgSize="cover"
-      color="white"
       display="flex"
       flexDir="column"
       h="100vh"
       overflow="hidden"
-      py="44"
+      py={[16, 44]}
       textAlign="center"
       w="100vw"
     >
