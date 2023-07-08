@@ -4,6 +4,7 @@ import { Card, CardBody, Stack, Button, Input } from '@chakra-ui/react';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import BN from 'bn.js';
+import { printExplorerLink } from '@/utils/explorer';
 
 export const SunriseDeposit: FC = () => {
   const wallet = useWallet();
@@ -32,7 +33,11 @@ export const SunriseDeposit: FC = () => {
   }, [wallet.publicKey?.toBase58()]);
 
   const handleDeposit = async () => {
-    if (!client || !wallet.connected) {
+    if (!client) {
+      alert('Sunrise client not found');
+      return;
+    }
+    if (!wallet.connected) {
       alert('Connect wallet first');
       return;
     }
@@ -44,8 +49,14 @@ export const SunriseDeposit: FC = () => {
       return;
     }
 
-    const tx = await client.deposit(amountLamports);
-    return wallet.sendTransaction(tx, connection);
+    try {
+      const tx = await client.deposit(amountLamports);
+      const sig = await wallet.sendTransaction(tx, connection);
+      printExplorerLink('Deposit sent', sig, connection);
+      return;
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
